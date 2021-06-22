@@ -1,0 +1,52 @@
+@media only screen and (max-width:380px) {
+    .left__navbar{
+        /* display: none; */
+        width: 100%;
+        background-color:rgba(0,15,12, 1);
+        margin-top: 60px;
+        height: 100vh;
+    }
+    .containerr{
+        width: 100%;
+        margin: 0;
+    }
+    .myphoto{
+        width: 100%;
+        height: auto;
+        margin-top: 25px;
+    }
+    .res_nav{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 40px;
+        
+    }
+    .name{
+        width: 70%;
+        height: 100vh;
+        font-size: 30px;
+        padding-top: 35%;
+        margin: 0 auto;
+    }
+    .contact__md5, .contact__md7{
+        border: 1px solid  #06111f ;
+        background-color:rgba(0, 0, 0, 0.7);
+        box-shadow: 0 0 20px #06111f ;
+        width: 90%;
+        margin-top: 20px;
+    }
+    body{
+        display: block;
+        background-image: url(../img/bgimg.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}

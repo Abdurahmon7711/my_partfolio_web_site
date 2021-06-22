@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,500&display=swap');
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior:  smooth ;
+    /* scroll-behavior: auto; */
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+html {
+    scroll-behavior: smooth;
+}
+.body_all{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    
+}
+    /* ================================ Navbar b'limi style ================== */
+ 
+.left__navbar{
+    position: fixed;
+    width:22%;
+    height:100vh;
+    background-color:rgba(0,15,12, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.left__navbar a{
+    text-decoration: none;
+}
+.div_img{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.nav__img{
+    margin-top: 16px;
+    border-radius: 50%;
+    border: 2px solid #313038;
+    width: 120px;
+    justify-content:center;
+}
+.left__navbar h4{
+    font-size:25px;
+    margin-top: 14px;
+    color:#fff;
+    text-align: center;
+}
+.nav__icon{
+    font-size:20px;
+    width: 35px;
+    height:35px;
+    background-color: #212431;
+    color: #fff;
+    margin: 5px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+
+}
+.nav__icon:hover{
+    color: rgb(9, 17, 17);
+}
+.nav__icons{
+    margin-top: 12px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.nav__icons a{
+    text-decoration: none;
+
+}
+.i{
+    font-size: 10px;
+}
+.nav__link:hover{
+    cursor: pointer;
+    
+}
+.nav__link:hover i{
+    color: aqua;
+}
+.nav__link{
+    display: flex;
+    margin: 20px 35px;
+    font-size: 17px;
+    font-weight: initial;
+    color: #a8a9b6;
+    align-items: baseline;
+}
+.nav__link p{
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.nav__footr{
+    
+    margin-bottom: 40px;
+    color:#b5b6c3;
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5px;
+}
+.footr_a{
+    text-decoration: none;
+    color: royalblue;
+}
+
+/* ===================================  Container bo'lim style =================== */
+
+
+
+body{
+    display: block;
+    background-image: url(../img/newbac.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth !important;
+}
+.containerr{
+    margin-left: 22%;
+    width: 82%;
+    color: rgb(116, 119, 106);
+}
+.res_nav{
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    margin-top: 20px;
+    display: none;
+}
+.name{
+    width: 70%;
+    height: 100vh;
+    color:#02060c ;
+    font-size: 50px;
+    padding-top: 30%;
+    margin: 0 auto;
+    
+}
+.name p spans{
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+/* ------------------------------------------ Asosi ----------------------- */
+.asosi{
+    padding:40px 20px;
+    background-color: #101512;
+    background-color:rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+.about_underlne{
+    margin-bottom: 20px;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: cyan;
+}
+.about_me{
+    display: flex;
+}
+.about_me__text{
+    margin:0 30px;
+}
+.myphoto{
+    width: 90%;
+    height: auto;
+    margin-top: 25px;
+}
+.aboutme__g{
+    display: flex;
+    justify-content: space-around;
+}
+.ai{
+    color: aqua;
+    margin-right: 5px;
+}
+.col-md-3 i{
+    margin-right: 10px;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.number{
+    font-size: 50px;
+    margin: 0;
+}
+
+/* ---------------------------------------- Partifoli -------------------------- */
+
+
+.card_partfoli{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width:100%;
+}
+.col-md-4{
+    margin-bottom: 20px;
+}
+
+.partfolio_btng{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
+.card_partfoli:hover .partfolio_btng{
+    transform: translateY(-100%);
+    opacity: 0.7;
+}
+
+.card-body{
+    margin:0;
+    padding:0;
+}
+
+/* -------------------------------  Services ----------------------------- */
+.services_icon{
+    display: flex;
+    width: 50px;
+    height:50px;
+    font-size: 20px;
+    color: #313038;
+    border: 1px solid #313038;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.partfolio_data:hover .services_icon{
+    color: #ff8;
+    border: 1px solid #ff8;
+    background-color: #313038;
+}
+/* ------------------------------------------ ----Testimonials ------------------ */
+.owl_c1{
+    width: 300px;
+    height:300px;
+    /* border: #a8a9b6 3px solid;  */
+}
+.imgs{
+    /* border:3px red solid; */
+    width: 90px;
+    padding-bottom: 0;
+    margin: 50px auto;
+
+}
+.owl__div{
+    display: flex;
+    justify-content: center;
+    background-color:  #06111f;
+}
+.owl_text{
+    margin-top: 10px;
+    border: 1px solid  #040c16 ;
+    box-shadow: 0 0 5px;
+    border-radius: 5px;
+    transition: 1s ease-in-out;
+}
+
+.owl_c1 .imgs p, h5{
+    margin: 0;
+} 
+/* .owl_span{
+    display: block;
+    width: 30px;
+    height:30px;
+    background-color: aqua;
+} */
+
+.owls{
+    position: relative;
+}
+
+.owl_text::after{
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 30px;
+    height:30px;
+    background-color: #06111f;
+    /* border: 2px solid red; */
+    margin: 0 auto;   
+    left: 50%;
+    top: 90%;
+    transform: translate(-5%);
+    transform: rotate(46deg);
+    bottom: 0;
+}
+
+.manfoto{
+    border:2px solid red;
+    border-radius: 50%;
+    /* margin-top: 10px;
+    padding-top:30px; */
+}
+
+
+
+
+/* ------------------------------------------------ Contacts ---------------------------- */
+
+.contact__icon{
+
+    display: flex;
+    width: 50px;
+    height: 50px;
+    color: #313058;
+    border: #313038 1px solid;
+    border-radius: 50%;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.contact__items{
+    display: flex;
+    align-items: flex-start;
+}
+.contact__items:hover .contact__icon{
+    color:#fff;
+    border-color:#ff8;
+}
+
+
+ 
+.contact__md5, .contact__md7{
+    border: 1px solid  #06111f ;
+    background-color:rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 20px #06111f ;
+    width: 45%;
+    margin-left: 30px;
+}
+
+.form-control {
+    border: none;
+    background-color:rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 20px #06111f ;
+    border-bottom: 2px solid #2462ad;
+    color: #fff;
+    outline: none;
+}
+.sendm{
+    background-color:rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 20px #06111f ;
+    border-bottom: 2px solid #2462ad;
+    color: #fff;
+}
+.sendm:hover{
+    color:  #2462ad;;
+}
+.sendm:active{
+    font-size: 20px;
+}
+
+
