@@ -31,6 +31,9 @@ html {
     flex-direction: column;
     justify-content: space-around;
 }
+.new_avatar{
+    background-color:rgba(124, 175, 164, 0.7);
+}
 .left__navbar a{
     text-decoration: none;
 }
@@ -134,9 +137,12 @@ body{
 .res_nav{
     display: flex;
     justify-content: space-around;
-    font-size: 30px;
+    font-size: 60px;
     margin-top: 20px;
     display: none;
+}
+.res_nav .burger:hover{
+    cursor: pointer;
 }
 .name{
     width: 70%;
@@ -347,11 +353,15 @@ body{
 
 .form-control {
     border: none;
+    width: 100%;
     background-color:rgba(0, 0, 0, 0.7);
     box-shadow: 0 0 20px #06111f ;
     border-bottom: 2px solid #2462ad;
     color: #fff;
     outline: none;
+}
+.form-control:active{
+    background-color: transparent;
 }
 .sendm{
     background-color:rgba(0, 0, 0, 0.7);

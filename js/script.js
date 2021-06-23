@@ -2,12 +2,7 @@ $('.owl-carousel').owlCarousel({
   loop:true,
   nav:false,
   dots:true,
-
-  // autoplay:true,
-  // autoplayTimeout:2000,
   stagePadding:1,
- 
-  
   dots:true,
   responsive:{
       350:{
@@ -19,6 +14,13 @@ $('.owl-carousel').owlCarousel({
       750:{
           items:3
       }
-
   }
 })
+
+(function(){
+    const burger = document.querySelector('.burgerp');
+    const avatar = documnet.querySelector('.name');
+    burger.addEventListener('click' , ()=>{
+            
+    })
+}())
