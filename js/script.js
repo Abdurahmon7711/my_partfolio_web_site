@@ -1,26 +1,14 @@
-$('.owl-carousel').owlCarousel({
-  loop:true,
-  nav:false,
-  dots:true,
-  stagePadding:1,
-  dots:true,
-  responsive:{
-      350:{
-          items:1
-      },
-      500:{
-          items:2
-      },
-      750:{
-          items:3
-      }
-  }
-})
+let typed = new Typed('.type', {
+    strings: ["web programist", "Frontend deweloper"],
+    typeSpeed: 40,
+    backSpeed: 70,
+    loop: true
+});
 
-(function(){
-    const burger = document.querySelector('.burgerp');
-    const avatar = documnet.querySelector('.name');
-    burger.addEventListener('click' , ()=>{
-            
-    })
-}())
+function burgerp(){
+    let nav = document.getElementById('nav');
+    if(nav != null){
+        nav.setAttribute('class', 'oncklik')    
+    }
+
+}

@@ -1,13 +1,34 @@
+
 @media only screen and (max-width:380px) {
     .left__navbar{
+        position: absolute;
+        top: 0;
+        left: -110%;
         display: none;
         width: 100%;
-        background-color:rgba(0,15,12, 1);
-        margin-top: 60px;
+        background-color:rgba(0,15,12, 0.7);
+        margin-top: 90px;
         height: 100vh;
+        display: block;
+        transition: all ease 0.5s;
+        transform: translate(100%);
     }
+    /* .oncklik{
+        position: absolute;
+        top: 0;
+        left: -110%;
+        display: none;
+        width: 110%;
+        background-color:rgba(0,15,12, 0.7);
+        margin-top: 90px;
+        height: 100vh;
+        display: block;
+        transition: all ease 0.5s;
+        transform: translate(100%);
+    } */
+   
     .containerr{
-        width: 100%;
+        width: 110%;
         margin: 0;
     }
     .myphoto{
@@ -16,18 +37,13 @@
         margin-top: 25px;
     }
     .res_nav{
-        display: block;
         display: flex;
         justify-content: space-between;
-        margin: 20px 40px;
+        margin: 30px 40px;
         
     }
     .name{
-        width: 70%;
-        height: 100vh;
-        font-size: 30px;
-        padding-top: 35%;
-        margin: 0 auto;
+        font-size: 35px;
     }
     .contact__md5, .contact__md7{
         border: 1px solid  #06111f ;
